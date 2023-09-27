@@ -1750,8 +1750,10 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-ul:before {
+.ul_title {
 	content: attr(aria-label);
 	font-size: 120%;
+	margin: 0px;
+	padding: 0px;
 	margin-left: -15px;
 }
