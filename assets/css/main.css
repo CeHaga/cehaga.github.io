@@ -1903,6 +1903,12 @@ body.is-preload #footer {
 	width: 100%;
 }
 
+@media (max-width: 800px) {
+	.row {
+		flex-direction: column;
+	}
+}
+
 .column {
 	display: flex;
 	flex-direction: column;
@@ -1913,6 +1919,7 @@ body.is-preload #footer {
 .project_tags {
 	display: flex;
 	gap: 10px;
+	flex-wrap: wrap;
 }
 
 .project_name {
