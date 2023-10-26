@@ -1869,10 +1869,27 @@ body.is-preload #footer {
 	opacity: 0;
 }
 
-.ul_title {
+.ul_title,
+.project_job_title {
 	content: attr(aria-label);
 	font-size: 120%;
 	margin: 0px;
 	padding: 0px;
 	margin-left: -15px;
+}
+
+.project_image_with_caption {
+	width: 50%;
+	display: block;
+	margin: 0 auto 0;
+}
+
+.project_image_without_caption {
+	width: 50%;
+	display: block;
+	margin: 0 auto 2rem auto;
+}
+
+.project_image_caption {
+	text-align: center;
 }
