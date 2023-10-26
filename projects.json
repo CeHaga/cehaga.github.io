@@ -2,6 +2,7 @@
     "gamesProjects": [
         {
             "name": "Robots in Terveijan",
+            "featured": true,
             "startYear": "2021",
             "image": "assets/images/RiT.png",
             "description": "A programming-based puzzle game started during Introduction to GameDev discipline at UFRJ. Now being used as a Final Paper for Computer Science BSc..",
@@ -25,6 +26,7 @@
         },
         {
             "name": "Blossom Besom",
+            "featured": true,
             "startYear": "2023",
             "endYear": "2023",
             "image": "assets/images/BlossomBesom.png",
@@ -49,6 +51,7 @@
         },
         {
             "name": "Polaris",
+            "featured": true,
             "startYear": "2023",
             "endYear": "2023",
             "image": "assets/images/Polaris.png",

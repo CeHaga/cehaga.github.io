@@ -9,6 +9,11 @@ function createElementsFromJSON(json) {
             // Create a new div
             var divRow = document.createElement("div");
             divRow.classList.add("row");
+            divRow.classList.add("project_row");
+
+            if (json[key][project].featured) {
+                divRow.classList.add("project_featured");
+            }
 
             var divCol1 = document.createElement("div");
             divCol1.classList.add("column");
@@ -21,7 +26,14 @@ function createElementsFromJSON(json) {
             // Set name with h2
             var name = document.createElement("h2");
             name.classList.add("project_name");
-            name.innerHTML = json[key][project].name;
+            if (json[key][project].featured) {
+                // Add fa-star icon
+                var star = document.createElement("i");
+                star.classList.add("fa");
+                star.classList.add("fa-star");
+                name.appendChild(star);
+            }
+            name.innerHTML += json[key][project].name;
             divCol1.appendChild(name);
 
             // Set year with h3
@@ -140,6 +152,10 @@ function createElementsFromJSON(json) {
                 }
             }
 
+            var jobSpecs = document.createElement("div");
+            jobSpecs.classList.add("project_job_specs");
+            divCol1.appendChild(jobSpecs);
+
             // Set job title with p
             var jobTitle = document.createElement("p");
             if (isGameCurrent) {
@@ -148,12 +164,13 @@ function createElementsFromJSON(json) {
                 jobTitle.innerHTML = "Worked as: " + json[key][project].jobTitle;
             }
             jobTitle.classList.add("project_job_title");
-            divCol1.appendChild(jobTitle);
+            jobSpecs.appendChild(jobTitle);
 
             // Join jobRespons to an ul
             if (json[key][project].jobRespons) {
                 var jobRespons = json[key][project].jobRespons;
                 var ul = document.createElement("ul");
+                ul.classList.add("project_job_list");
                 // For each job responsibility
                 for (var i = 0; i < jobRespons.length; i++) {
                     // Create a new li
@@ -164,7 +181,7 @@ function createElementsFromJSON(json) {
                     ul.appendChild(li);
                 }
                 // Append the ul to the div
-                divCol1.appendChild(ul);
+                jobSpecs.appendChild(ul);
             }
 
             div.appendChild(divRow);

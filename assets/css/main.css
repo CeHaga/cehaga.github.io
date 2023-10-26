@@ -1872,9 +1872,12 @@ body.is-preload #footer {
 .project_job_title {
 	content: attr(aria-label);
 	font-size: 120%;
-	margin: 0px;
+	margin-bottom: 0px;
 	padding: 0px;
-	margin-left: -15px;
+}
+
+.project_job_list {
+	margin-left: 15px;
 }
 
 .project_image_with_caption {
@@ -1918,4 +1921,12 @@ body.is-preload #footer {
 
 .project_link {
 	border-bottom: none;
+}
+
+.project_featured {
+	background: hwb(73 17% 0% / 0.11);
+}
+
+.project_row {
+	padding: 15px;
 }
