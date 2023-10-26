@@ -3,7 +3,7 @@
         {
             "name": "Robots in Terveijan",
             "startYear": "2021",
-            "image": "assets/images/Rit.png",
+            "image": "assets/images/RiT.png",
             "description": "A programming-based puzzle game started during Introduction to GameDev discipline at UFRJ. Now being used as a Final Paper for Computer Science BSc..",
             "jobTitle": "Lead Programmer",
             "jobRespons": [
