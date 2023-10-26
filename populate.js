@@ -58,6 +58,20 @@ function createElementsFromJSON(json) {
             var tags = document.createElement("div");
             tags.classList.add("project_tags");
 
+            // If featured, add a black tag
+            if (json[key][project].featured) {
+                // Create a new div
+                var tagsDiv = document.createElement("div");
+                // Set the text
+                tagsDiv.innerHTML = "Featured";
+                // Set w3 tag class
+                tagsDiv.classList.add("w3-tag");
+                tagsDiv.classList.add("w3-round");
+                tagsDiv.classList.add("w3-black");
+                // Append the div to the div
+                tags.appendChild(tagsDiv);
+            }
+
             if (json[key][project].jobTags) {
                 // For each jobTags
                 for (var i = 0; i < json[key][project].jobTags.length; i++) {
