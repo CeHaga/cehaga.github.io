@@ -1915,3 +1915,7 @@ body.is-preload #footer {
 .project_name {
 	margin-bottom: 0;
 }
+
+.project_link {
+	border-bottom: none;
+}

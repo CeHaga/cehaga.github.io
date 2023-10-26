@@ -108,6 +108,7 @@ function createElementsFromJSON(json) {
                 var link = document.createElement("a");
                 link.href = json[key][project].link;
                 link.target = "_blank";
+                link.classList.add("project_link");
                 divCol2.appendChild(link);
             }
 
