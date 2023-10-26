@@ -6,6 +6,9 @@
             "image": "assets/images/RiT.png",
             "description": "A programming-based puzzle game started during Introduction to GameDev discipline at UFRJ. Now being used as a Final Paper for Computer Science BSc..",
             "jobTitle": "Lead Programmer",
+            "jobTags": [
+                "Programming"
+            ],
             "jobRespons": [
                 "Designed the game's code architecture",
                 "Designed and implemented a compiler for block programming",
@@ -15,6 +18,9 @@
             "techs": [
                 "Unity",
                 "C#"
+            ],
+            "platforms": [
+                "Windows"
             ]
         },
         {
@@ -26,6 +32,9 @@
             "imageCaption": "Published to GDP UFRJ at itch.io",
             "description": "A Shoot'em Up with GBA assets, made in 3 months for GDP.",
             "jobTitle": "Gameplay Programmer",
+            "jobTags": [
+                "Programming"
+            ],
             "jobRespons": [
                 "Designed and implemented enemies movement using parametric equations",
                 "Designed and implemented enemies patterns given movement and time"
@@ -33,6 +42,9 @@
             "techs": [
                 "Unity",
                 "C#"
+            ],
+            "platforms": [
+                "Windows"
             ]
         },
         {
@@ -44,6 +56,10 @@
             "imageCaption": "Published to Magical Girl Game Jam #7 at itch.io",
             "description": "A Megaman-like platformer, made in 1 month for the Magical Girl Game Jam #7.",
             "jobTitle": "Boss Mechanics Programmer",
+            "jobTags": [
+                "Programming",
+                "AI"
+            ],
             "jobRespons": [
                 "Designed and implemented Taurus and Pisces mechanics",
                 "Boss strategy takes into account the power for the other boss"
@@ -51,6 +67,10 @@
             "techs": [
                 "Unity",
                 "C#"
+            ],
+            "platforms": [
+                "Windows",
+                "Web"
             ]
         },
         {
@@ -59,12 +79,19 @@
             "endYear": "2023",
             "image": "assets/images/yatra.jpeg",
             "link": "https://nancoardo.itch.io/yatra",
-            "imageCaption": "Published to GDP UFRJ at itch.io",
-            "description": "A combat platformer, made in 2 weeks for GDP's LAJE.",
+            "imageCaption": "Published to Laje 2023 Game Jam at itch.io",
+            "description": "A combat platformer, made in 2 weeks for Laje 2023 Game Jam.",
             "jobTitle": "Project Manager",
+            "jobTags": [
+                "Project Management"
+            ],
             "jobRespons": [
                 "Guided the team to make a game in 2 weeks reducing scope when necessary",
                 "Guided and organized meetings"
+            ],
+            "platforms": [
+                "Windows",
+                "Web"
             ]
         },
         {
@@ -76,10 +103,17 @@
             "imageCaption": "Published to GDP UFRJ at itch.io",
             "description": "A dating simulator, wrote in 1 week for GDP.",
             "jobTitle": "Character Writer",
+            "jobTags": [
+                "Writing",
+                "Character Story"
+            ],
             "jobRespons": [
                 "Created Pollyana Golubev, a bird enthusiast who loves to make bird jokes",
                 "Created Sir Richard K. Motherlode, a sugar daddy billionaire looking for his sugar baby",
                 "Created PiadaBot 3000, a robot created by Sir Motherlode to cheer him up, but makes terrible programming jokes"
+            ],
+            "platforms": [
+                "Windows"
             ]
         },
         {
@@ -91,12 +125,19 @@
             "imageCaption": "Published to Laje 2022 Game Jam at itch.io",
             "description": "A fighting puzzle game with the power of origami transformation, made during 1 week for Laje 2022 Game Jam.",
             "jobTitle": "Programmer",
+            "jobTags": [
+                "Programming"
+            ],
             "jobRespons": [
                 "Implemented fight system in layers"
             ],
             "techs": [
                 "Unity",
                 "C#"
+            ],
+            "platforms": [
+                "Windows",
+                "Web"
             ]
         },
         {
@@ -107,7 +148,11 @@
             "link": "https://gamejolt.com/games/ArcaneBlood/381600",
             "imageCaption": "Published to 365 Indies Jam 2018 at Game Jolt",
             "description": "A rogue-like similar to The Binding of Isaac game about a mage apprentice in a quest to defeat the Blood Mage, made in 2 weeks for the 365 Indies Jam 2018.",
-            "jobTitle": "Programmer",
+            "jobTitle": "Programmer and Game Designer",
+            "jobTags": [
+                "Programming",
+                "Game Design"
+            ],
             "jobRespons": [
                 "Level layout is generated by random graph",
                 "Implemented 2D rogue-like mechanics",
@@ -116,6 +161,9 @@
             "techs": [
                 "Unity",
                 "C#"
+            ],
+            "platforms": [
+                "Windows"
             ]
         },
         {
@@ -125,12 +173,19 @@
             "image": "assets/images/ProfessorsAcademy.jpg",
             "description": "2D-Fighting game with Informatics teachers made during a project at CEFET/RJ.",
             "jobTitle": "Programmer and Game Designer",
+            "jobTags": [
+                "Programming",
+                "Game Design"
+            ],
             "jobRespons": [
                 "Balanced the characters with different movement and attack speeds"
             ],
             "techs": [
                 "Unity",
                 "C#"
+            ],
+            "platforms": [
+                "Windows"
             ]
         },
         {
@@ -140,12 +195,18 @@
             "image": "assets/images/CHILB.jpg",
             "description": "Card game to teach Organic Chemistry nomenclature by connecting compounds and naming them, made during a project at CEFET/RJ.",
             "jobTitle": "Programmer",
+            "jobTags": [
+                "Programming"
+            ],
             "jobRespons": [
                 "Implemented dragging and dropping cards mechanics"
             ],
             "techs": [
                 "Greenfoot",
                 "Java"
+            ],
+            "platforms": [
+                "Windows"
             ]
         }
     ]

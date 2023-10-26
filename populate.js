@@ -7,12 +7,22 @@ function createElementsFromJSON(json) {
         // For each element in the array
         for (var project in json[key]) {
             // Create a new div
-            var newDiv = document.createElement("div");
+            var divRow = document.createElement("div");
+            divRow.classList.add("row");
+
+            var divCol1 = document.createElement("div");
+            divCol1.classList.add("column");
+            divRow.appendChild(divCol1);
+
+            var divCol2 = document.createElement("div");
+            divCol2.classList.add("column");
+            divRow.appendChild(divCol2);
 
             // Set name with h2
             var name = document.createElement("h2");
+            name.classList.add("project_name");
             name.innerHTML = json[key][project].name;
-            newDiv.appendChild(name);
+            divCol1.appendChild(name);
 
             // Set year with h3
             var year = document.createElement("h3");
@@ -30,12 +40,66 @@ function createElementsFromJSON(json) {
                 year.innerHTML = `(${startYear} - Present)`;
                 isGameCurrent = true;
             }
-            newDiv.appendChild(year);
+            divCol1.appendChild(year);
+
+            // Set tags
+            var tags = document.createElement("div");
+            tags.classList.add("project_tags");
+
+            if (json[key][project].jobTags) {
+                // For each jobTags
+                for (var i = 0; i < json[key][project].jobTags.length; i++) {
+                    // Create a new div
+                    var tagsDiv = document.createElement("div");
+                    // Set the text
+                    tagsDiv.innerHTML = json[key][project].jobTags[i];
+                    // Set w3 tag class
+                    tagsDiv.classList.add("w3-tag");
+                    tagsDiv.classList.add("w3-round");
+                    tagsDiv.classList.add("w3-blue");
+                    // Append the div to the div
+                    tags.appendChild(tagsDiv);
+                }
+            }
+
+            if (json[key][project].techs) {
+                // For each techs
+                for (var i = 0; i < json[key][project].techs.length; i++) {
+                    // Create a new div
+                    var tagsDiv = document.createElement("div");
+                    // Set the text
+                    tagsDiv.innerHTML = json[key][project].techs[i];
+                    // Set w3 tag class
+                    tagsDiv.classList.add("w3-tag");
+                    tagsDiv.classList.add("w3-round");
+                    tagsDiv.classList.add("w3-purple");
+                    // Append the div to the div
+                    tags.appendChild(tagsDiv);
+                }
+            }
+
+            if (json[key][project].platforms) {
+                // For each platforms
+                for (var i = 0; i < json[key][project].platforms.length; i++) {
+                    // Create a new div
+                    var tagsDiv = document.createElement("div");
+                    // Set the text
+                    tagsDiv.innerHTML = json[key][project].platforms[i];
+                    // Set w3 tag class
+                    tagsDiv.classList.add("w3-tag");
+                    tagsDiv.classList.add("w3-round");
+                    tagsDiv.classList.add("w3-red");
+                    // Append the div to the div
+                    tags.appendChild(tagsDiv);
+                }
+            }
+
+            divCol1.appendChild(tags);
 
             // Set description with p
             var description = document.createElement("p");
             description.innerHTML = json[key][project].description;
-            newDiv.appendChild(description);
+            divCol1.appendChild(description);
 
             // Create image link
             var hasLink = false;
@@ -44,7 +108,7 @@ function createElementsFromJSON(json) {
                 var link = document.createElement("a");
                 link.href = json[key][project].link;
                 link.target = "_blank";
-                newDiv.appendChild(link);
+                divCol2.appendChild(link);
             }
 
             // Set image with link
@@ -59,7 +123,7 @@ function createElementsFromJSON(json) {
                 if (hasLink) {
                     link.appendChild(image);
                 } else {
-                    newDiv.appendChild(image);
+                    divCol2.appendChild(image);
                 }
             }
 
@@ -71,7 +135,7 @@ function createElementsFromJSON(json) {
                 if (hasLink) {
                     link.appendChild(caption);
                 } else {
-                    newDiv.appendChild(caption);
+                    divCol2.appendChild(caption);
                 }
             }
 
@@ -83,12 +147,11 @@ function createElementsFromJSON(json) {
                 jobTitle.innerHTML = "Worked as: " + json[key][project].jobTitle;
             }
             jobTitle.classList.add("project_job_title");
-            newDiv.appendChild(jobTitle);
+            divCol1.appendChild(jobTitle);
 
-            // Join jobRespons and techs to an ul
-            if (json[key][project].jobRespons.length > 0 || json[key][project].techs.length > 0) {
+            // Join jobRespons to an ul
+            if (json[key][project].jobRespons) {
                 var jobRespons = json[key][project].jobRespons;
-                var techs = json[key][project].techs;
                 var ul = document.createElement("ul");
                 // For each job responsibility
                 for (var i = 0; i < jobRespons.length; i++) {
@@ -99,17 +162,11 @@ function createElementsFromJSON(json) {
                     // Append the li to the ul
                     ul.appendChild(li);
                 }
-                // If has techs
-                if (techs) {
-                    // Added "Used" and every tech by comma
-                    var li = document.createElement("li");
-                    li.innerHTML = "Used: " + techs.join(", ");
-                    ul.appendChild(li);
-                }
                 // Append the ul to the div
-                newDiv.appendChild(ul);
+                divCol1.appendChild(ul);
             }
-            div.appendChild(newDiv);
+
+            div.appendChild(divRow);
             div.appendChild(document.createElement("hr"));
         }
         div.removeChild(div.lastChild);
