@@ -114,7 +114,7 @@ function createElementsFromJSON(json) {
                     // Set w3 tag class
                     tagsDiv.classList.add("w3-tag");
                     tagsDiv.classList.add("w3-round");
-                    tagsDiv.classList.add("w3-red");
+                    tagsDiv.classList.add("w3-pink");
                     // Append the div to the div
                     tags.appendChild(tagsDiv);
                 }
