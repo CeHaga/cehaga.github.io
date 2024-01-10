@@ -147,6 +147,25 @@
             ]
         },
         {
+            "name": "Lupinho",
+            "unfinished": true,
+            "startYear": "2022",
+            "endYear": "2023",
+            "image": "assets/images/lupinho.jpg",
+            "description": "A top down visual novel about a rat finding clues and deducing the author of a crime, started as a GDP project.",
+            "jobTitle": "Programmer",
+            "jobTags": [
+                "Programming"
+            ],
+            "jobRespons": [
+                "Implemented a diary system to keep track of clues and dialogues",
+                "Implemented a clock that keeps track of every action and updates accordingly"
+            ],
+            "platforms": [
+                "Windows"
+            ]
+        },
+        {
             "name": "The NPC Game",
             "startYear": "2022",
             "endYear": "2022",

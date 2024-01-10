@@ -72,6 +72,19 @@ function createElementsFromJSON(json) {
                 tags.appendChild(tagsDiv);
             }
 
+            if (json[key][project].unfinished) {
+                // Create a new div
+                var tagsDiv = document.createElement("div");
+                // Set the text
+                tagsDiv.innerHTML = "Unfinished";
+                // Set w3 tag class
+                tagsDiv.classList.add("w3-tag");
+                tagsDiv.classList.add("w3-round");
+                tagsDiv.classList.add("w3-red");
+                // Append the div to the div
+                tags.appendChild(tagsDiv);
+            }
+
             if (json[key][project].jobTags) {
                 // For each jobTags
                 for (var i = 0; i < json[key][project].jobTags.length; i++) {
