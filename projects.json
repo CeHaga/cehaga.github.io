@@ -3,7 +3,7 @@
         {
             "name": "Robots in Terveijan",
             "featured": true,
-            "startYear": "2021",
+            "startYear": "2022",
             "image": "assets/images/RiT.png",
             "description": "A programming-based puzzle game started during Introduction to GameDev discipline at UFRJ. Now being used as a Final Paper for Computer Science BSc..",
             "jobTitle": "Lead Programmer",
@@ -19,6 +19,55 @@
             "techs": [
                 "Unity",
                 "C#"
+            ],
+            "platforms": [
+                "Windows"
+            ]
+        },
+        {
+            "name": "Alikia",
+            "featured": true,
+            "startYear": "2023",
+            "endYear": "2023",
+            "image": "assets/images/alikia.jpg",
+            "link": "https://gdpufrj.itch.io/alikia",
+            "imageCaption": "Published to GDP UFRJ at itch.io",
+            "description": "A deck system based combat in turns on a grid, made in 3 months for GDP.",
+            "jobTitle": "Lead Programmer",
+            "jobTags": [
+                "Programming"
+            ],
+            "jobRespons": [
+                "Designed and implemened the deck system",
+                "Coordinated with other people to work as a team of 4 programmers",
+                "Integrated the code with the other dev team"
+            ],
+            "techs": [
+                "Godot",
+                "GDScript"
+            ],
+            "platforms": [
+                "Windows",
+                "Web"
+            ]
+        },
+        {
+            "name": "Chá no Ar",
+            "featured": false,
+            "startYear": "2023",
+            "endYear": "2023",
+            "image": "assets/images/cha_no_ar.png",
+            "imageCaption": "Published to GDP UFRJ at itch.io",
+            "link": "https://gdpufrj.itch.io/cha-no-ar",
+            "description": "A top down visual novel, made in 3 months for GDP.",
+            "jobTitle": "Project Manager",
+            "jobTags": [
+                "Project Management"
+            ],
+            "jobRespons": [
+                "Helped the team choosing the game's theme",
+                "Guided the team to make a game in 3 months reducing scope when necessary",
+                "Guided and organized meetings"
             ],
             "platforms": [
                 "Windows"
