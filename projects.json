@@ -52,28 +52,6 @@
             ]
         },
         {
-            "name": "Chá no Ar",
-            "featured": false,
-            "startYear": "2023",
-            "endYear": "2023",
-            "image": "assets/images/cha_no_ar.png",
-            "imageCaption": "Published to GDP UFRJ at itch.io",
-            "link": "https://gdpufrj.itch.io/cha-no-ar",
-            "description": "A top down visual novel, made in 3 months for GDP.",
-            "jobTitle": "Project Manager",
-            "jobTags": [
-                "Project Management"
-            ],
-            "jobRespons": [
-                "Helped the team choosing the game's theme",
-                "Guided the team to make a game in 3 months reducing scope when necessary",
-                "Guided and organized meetings"
-            ],
-            "platforms": [
-                "Windows"
-            ]
-        },
-        {
             "name": "Blossom Besom",
             "featured": true,
             "startYear": "2023",
@@ -126,6 +104,27 @@
             ]
         },
         {
+            "name": "Chá no Ar",
+            "startYear": "2023",
+            "endYear": "2023",
+            "image": "assets/images/cha_no_ar.png",
+            "imageCaption": "Published to GDP UFRJ at itch.io",
+            "link": "https://gdpufrj.itch.io/cha-no-ar",
+            "description": "A top down visual novel, made in 3 months for GDP.",
+            "jobTitle": "Project Manager",
+            "jobTags": [
+                "Project Management"
+            ],
+            "jobRespons": [
+                "Helped the team choosing the game's theme",
+                "Guided the team to make a game in 3 months reducing scope when necessary",
+                "Guided and organized meetings"
+            ],
+            "platforms": [
+                "Windows"
+            ]
+        },
+        {
             "name": "Yatra",
             "startYear": "2023",
             "endYear": "2023",
@@ -160,6 +159,10 @@
             "jobRespons": [
                 "Implemented a diary system to keep track of clues and dialogues",
                 "Implemented a clock that keeps track of every action and updates accordingly"
+            ],
+            "techs": [
+                "Unity",
+                "C#"
             ],
             "platforms": [
                 "Windows"
