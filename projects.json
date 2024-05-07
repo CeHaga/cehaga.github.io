@@ -67,7 +67,8 @@
             ],
             "jobRespons": [
                 "Designed and implemented enemies movement using parametric equations",
-                "Designed and implemented enemies patterns given movement and time"
+                "Designed and implemented enemies patterns given movement and time",
+                "Implemented highscore system"
             ],
             "techs": [
                 "Unity",
