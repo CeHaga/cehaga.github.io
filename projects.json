@@ -4,8 +4,9 @@
             "name": "Robots in Terveijan",
             "featured": true,
             "startYear": "2022",
+            "endYear": "2024",
             "image": "assets/images/RiT.png",
-            "description": "A programming-based puzzle game started during Introduction to GameDev discipline at UFRJ. Now being used as a Final Paper for Computer Science BSc..",
+            "description": "A programming-based puzzle game started during Introduction to GameDev discipline at UFRJ and turned as a Final Paper for Computer Science BSc..",
             "jobTitle": "Lead Programmer",
             "jobTags": [
                 "Programming"
@@ -14,7 +15,7 @@
                 "Designed the game's code architecture",
                 "Designed and implemented a compiler for block programming",
                 "Coordinated with other people to work as a team of 3 programmers",
-                "Polishing for presenting the paper, due to December 2023"
+                "Wrote a thesis on the game's development"
             ],
             "techs": [
                 "Unity",
